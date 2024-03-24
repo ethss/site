@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="Smashkarts">
+<head>
+    <meta name="author" content="NXX99"/>
+    <meta name="description" content="Smash karts on Unblocked games from NXX99. Unblocked games here!"/>
+    <meta name="keywords" content="Smash karts unblocked, smash karts, Smash karts io">
+    <link rel="icon" href="../favicon.png"/>
+    <title>Smash karts</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+            border: 0; /* Remove iframe border */
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="../key.css" media="screen"/>
+</head>
+<body>
+    <iframe id="game" src="https://webgltest-17af1.firebaseapp.com/"></iframe>
+    <br/>
+    <p>Controls: <span id="key"> W </span> <span id="key"> A </span> <span id="key"> S </span> <span id="key"> D </span>: Movement (same for the arrow keys), <span id="key"> Spacebar </span>: Fire weapon</p>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <button class="version" disabled id='currentbuild' onclick='document.getElementById("game").src = "https://webgltest-17af1.firebaseapp.com"; 
+        disabled = true;'>
+        Latest
+    </button>
+    <button class="version" id='beta' onclick='document.getElementById("game").src = "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/zhit73/8y3ds26tf3s@main/sc51di7fwus3.xml";
+        document.getElementById("currentbuild").disabled=false;'>
+        Beta
+    </button>
+    <button class="version" id='mobile' onclick='document.getElementById("game").src = "https://smashkarts-dev.firebaseapp.com";
+        document.getElementById("currentbuild").disabled=false;'>
+        Mobile
+    </button>
+    <br/>
+    <br/>
+    <button onclick="window.open(document.getElementById('game').src)">Full screen</button>
+</body>
+</html>
